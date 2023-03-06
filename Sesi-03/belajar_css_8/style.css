@@ -1,0 +1,19 @@
+
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 10px;
+}
+
+ul.transportasi{
+    list-style-type: square;
+}
+
+ul.lokasi{
+    list-style-type: circle;
+}
+
+ol.merk{
+    list-style-type: upper-roman;
+}

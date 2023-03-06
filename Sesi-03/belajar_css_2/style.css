@@ -1,0 +1,23 @@
+body {
+    background-color: #ffe0ea;
+    color: #212020;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.box-dua {
+    background-color: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+}

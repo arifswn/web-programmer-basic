@@ -1,0 +1,43 @@
+summary sesi 01
+---
+- pemahaman tentang syllabus (programming for developer)
+    - html dan css
+    - algoritma dan js
+    - dom dan regex
+    - penggunaan testing dan deployment
+- apa itu front end developer
+    - tugas front end developer
+    - mengembangkan user interface
+    - keterampilan utama front end
+- apa itu back end developer
+    - tugas back end developer
+    - keterampilan back end developer
+    - merancang dan mengembangkan database
+    - mengintegrasikan elemen yang di kembangkan oleh front end developer
+    - menguji performa user interface
+- pengenalan web programming introduciton
+    - struktur html (landing page implementation)
+    - pemahaman tentang web browser
+    - debugging / firebug / developer tools
+- tools editor
+    - instalasi vscode (visual studio code)
+    - instalasi extension vscode
+    - instalasi server local
+        - xampp
+        - laragon
+    - pengenalan tools database
+        - adminer
+        - sqlyog
+        - heidesql
+        - dbeaver
+        - dll
+- belajar terkait tugas mandiri
+    - format tugas
+    - pengumpulan tugas
+
+kehadiran peserta : 
+- RIO DESRA GINTING - 01
+- DIMASTAMA AGSYAN DEVA - 02
+- DONY ABRIANSYAH UTOYO - 06
+- HESTRIYANAH - 09
+- Harnita Zulmi Ansela - 07
