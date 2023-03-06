@@ -30,12 +30,3 @@ html layout :
 
 referensi :
 http://learnlayout.com/
-
-kehadiran peserta : 
-- RIO DESRA GINTING - 01
-- DIMASTAMA AGSYAN DEVA - 02
-- FALAAH KIEMAL LUTHFI - 04
-- DONY ABRIANSYAH UTOYO - 06
-- HESTRIYANAH - 09
-- SRI NAFSAH IRMA - 03
-- HILDA KOMALADEWI - 08

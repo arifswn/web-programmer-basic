@@ -25,13 +25,5 @@ summary sesi 04
 - peserta melakukan presentasi dan untuk yang belum sempat presentasi di jadikan tugas
 - membuat tugas untuk sesi 04 yang akan di presentasikan di pertemuan selanjutnya
 
-kehadiran peserta : 
-- RIO DESRA GINTING - 01
-- DIMASTAMA AGSYAN DEVA - 02
-- FALAAH KIEMAL LUTHFI - 04
-- DONY ABRIANSYAH UTOYO - 06
-- HARNITA ZULMI ANSELA - 07
-- HESTRIYANAH - 09
-
 pembelajaran sesi 04 :
 https://codeshare.io/webprogrammersesi04
