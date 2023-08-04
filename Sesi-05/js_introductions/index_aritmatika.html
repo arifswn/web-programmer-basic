@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Artimatika</title>
+  </head>
+  <body>
+    <h1>Belajar Aritmatika</h1>
+    <!-- 
+        contoh aritmatika
+            1. penjumlahan
+            2. pengurangan
+            3. perkalian
+            4. pembagian
+            5. modulus
+            6. increment
+            7. decrement
+    -->
+
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+    <div id="increment"></div>
+    <div id="decrement"></div>
+
+    <script>
+      //dekralasi variabel
+      var bilangan1 = 10;
+      var bilangan2 = 5;
+
+      //penjumlahan
+      var penjumlahan = bilangan1 + bilangan2;
+
+      //pengurangan
+      var pengurangan = bilangan1 - bilangan2;
+
+      //perkalian
+      var perkalian = bilangan1 * bilangan2;
+
+      //pembagian
+      var pembagian = bilangan1 / bilangan2;
+
+      //modulus
+      var modulus = bilangan1 % bilangan2;
+
+      //increment
+      var increment = bilangan1++;
+
+      //decrement
+      var decrement = bilangan1--;
+
+      //tampilkan hasil
+      document.getElementById(
+        "penjumlahan"
+      ).innerHTML = `Hasil penjumlahan dari ${bilangan1} + ${bilangan2} adalah ${penjumlahan}`;
+      document.getElementById(
+        "pengurangan"
+      ).innerHTML = `Hasil pengurangan dari ${bilangan1} - ${bilangan2} adalah ${pengurangan}`;
+      document.getElementById(
+        "perkalian"
+      ).innerHTML = `Hasil perkalian dari ${bilangan1} * ${bilangan2} adalah ${perkalian}`;
+      document.getElementById(
+        "pembagian"
+      ).innerHTML = `Hasil pembagian dari ${bilangan1} / ${bilangan2} adalah ${pembagian}`;
+      document.getElementById(
+        "modulus"
+      ).innerHTML = `Hasil modulus dari ${bilangan1} % ${bilangan2} adalah ${modulus}`;
+      document.getElementById(
+        "increment"
+      ).innerHTML = `Hasil increment dari ${bilangan1}++ adalah ${increment}`;
+      document.getElementById(
+        "decrement"
+      ).innerHTML = `Hasil decrement dari ${bilangan1}-- adalah ${decrement}`;
+    </script>
+  </body>
+</html>

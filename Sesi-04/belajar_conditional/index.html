@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Conditional</title>
+  </head>
+  <body>
+    <h1>Belajar Conditional</h1>
+    <p>
+      Conditional jika kita lapar, kita akan makan. "Jika kita lapar" adalah
+      sebuah kondisi, dan "kita akan makan" adalah step yang hanya akan
+      dijalankan apabila kondisi tersebut terpenuhi.
+    </p>
+    <div id="conditional"></div>
+    <hr />
+    <p>
+      Conditional saat nilai ujian dibawah 70, saya harus berlajar lebih giat.
+      Tapi jika tidak, maka saya layak memberi reward untuk diri sendiri.
+    </p>
+    <div id="conditional2"></div>
+    <script>
+      // lapar
+      var lapar = true;
+      if (lapar) {
+        console.log("Kita akan makan");
+        document.getElementById("conditional").innerHTML =
+          `Status: ${lapar}` + "<br>" + "Kita akan makan";
+      } else {
+        console.log("Kita tidak akan makan");
+        document.getElementById("conditional").innerHTML =
+          `Status: ${lapar}` + "<br>" + "Kita tidak akan makan";
+      }
+
+      //   nilai
+      var nilai = 80;
+      if (nilai < 70) {
+        console.log("Saya harus belajar lebih giat");
+        document.getElementById("conditional2").innerHTML =
+          `Nilai: ${nilai}` + "<br>" + "Saya harus belajar lebih giat";
+      } else {
+        console.log("Saya layak memberi reward untuk diri sendiri");
+        document.getElementById("conditional2").innerHTML =
+          `Nilai: ${nilai}` +
+          "<br>" +
+          "Saya layak memberi reward untuk diri sendiri";
+      }
+    </script>
+  </body>
+</html>

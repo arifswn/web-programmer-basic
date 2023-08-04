@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        display: block;
+        outline: none;
+        border: none;
+      }
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tugas Mandiri</h1>
+
+    <!-- pesan -->
+    <label for="pesan">Pesan</label>
+    <input type="text" id="pesan" placeholder="Masukkan pesan" />
+    <br />
+    <label for="berapa-kali">Berapa kali</label>
+    <input type="number" id="berapa-kali" placeholder="Masukkan berapa kali" />
+    <br />
+    <button onclick="tampilkanPesan()">Tampilkan Pesan</button>
+    <!-- cetak output ol dan ul -->
+    <p id="hasil"></p>
+
+    <script>
+      // deklarasi variabel
+      var pesan = document.getElementById("pesan");
+      var berapaKali = document.getElementById("berapa-kali");
+      var hasil = document.getElementById("hasil");
+
+      // function tampilkanPesan
+      function tampilkanPesan() {
+        // cek apakah pesan dan berapaKali kosong
+        if (pesan.value == "" || berapaKali.value == "") {
+          // jika kosong maka tampilkan pesan
+          hasil.innerHTML = "Pesan dan berapa kali harus diisi";
+        } else {
+          // jika tidak kosong maka jalankan function tampilkanPesan2
+          tampilkanPesan2();
+        }
+      }
+      function tampilkanPesan2() {
+        // deklarasi variabel
+        var pesanValue = pesan.value;
+        var berapaKaliValue = berapaKali.value;
+        var hasilValue = "";
+        // cetak output ol dan ul
+        hasilValue += `<ul>`;
+        hasilValue += `<li>Isi pesan: ${pesanValue}</li>`;
+        hasilValue += `<li>Berapa kali: ${berapaKaliValue}</li>`;
+
+        hasilValue += `</ul>`;
+
+        hasilValue += `<ol>`;
+        for (let i = 0; i < berapaKaliValue; i++) {
+          hasilValue += `<li>${pesanValue}</li>`;
+        }
+        hasilValue += `</ol>`;
+        // tampilkan hasilValue
+        hasil.innerHTML = hasilValue;
+      }
+    </script>
+  </body>
+</html>

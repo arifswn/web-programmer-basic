@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hitung grade input</h1>
+    <input
+      id="nilai"
+      type="number"
+      placeholder="Input nilai anda"
+      min="0"
+      max="100"
+    />
+    <button onclick="hitungGrade()">Hitung Grade</button>
+    <div id="hasil"></div>
+
+    <!-- external -->
+    <script src="script.js"></script>
+    <!-- internal -->
+    <script>
+      function hitungGrade() {
+        var nilai = document.getElementById("nilai").value;
+        var grade = hitungGradePembanding(nilai);
+        document.getElementById("hasil").innerHTML =
+          "Grade dari nilai " + nilai + " adalah " + grade;
+      }
+    </script>
+  </body>
+</html>

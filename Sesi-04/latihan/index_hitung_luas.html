@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Luas dan Keliling lingkaran</title>
+  </head>
+  <body>
+    <h1>Menghitung Luas dan Keliling lingkaran</h1>
+    <p>
+      Tugas Mandiri - Sesi 4 <br />
+      Buatlah sebuah algoritma yang menghitung luas dan keliling lingkaran, jika
+      diberikan panjang jari-jari lingkaran. <br />
+      1. tulis judul algoritma <br />
+      2. tulis input input yang diperlukan untuk menghitung luas dan keliling
+      lingkaran <br />
+      3. tulis langkah kalkulasi <br />
+      4. tulis instruksi untuk tampilkan hasil kalkulasi
+    </p>
+    <hr />
+
+    <div id="luas-keliling-lingkaran"></div>
+    <script>
+      // jawaban nomor 1.
+      // judul algoritma
+      // menghitung luas dan keliling lingkaran
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML = `Jawaban nomor 1. <br> Menghitung luas dan keliling lingkaran <br><br>`;
+
+      // jawaban nomor 2.
+      // input yang diperlukan untuk menghitung luas dan keliling lingkaran
+      // simpan "phi" dengan nilai 3.14
+      // simpan "r" dengan nilai berapapun
+      // simpan "luas" tanpa diberikan nilai. Ini akan kita isi nanti.
+      // simpan "keliling" tanpa diberikan nilai. Ini akan kita isi nanti.
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `Jawaban nomor 2. <br> Simpan "phi" dengan nilai 3.14 <br> Simpan "r" dengan nilai berapapun <br> Simpan "luas" tanpa diberikan nilai. Ini akan kita isi nanti. <br> Simpan "keliling" tanpa diberikan nilai. Ini akan kita isi nanti. <br><br>`;
+
+      // jawaban nomor 3.
+      // langkah kalkulasi
+      // hitung hasil perkalian "phi" dengan "r" dengan "r"
+      // setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "luas"
+      // hitung hasil perkalian "phi" dengan "r" dengan 2
+      // setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "keliling"
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `Jawaban nomor 3. <br> Hitung hasil perkalian "phi" dengan "r" dengan "r" <br> Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "luas" <br> Hitung hasil perkalian "phi" dengan "r" dengan 2 <br> Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "keliling" <br><br>`;
+
+      // jawaban nomor 4.
+      // tampilkan nilai dari "luas"
+      // tampilkan nilai dari "keliling"
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `Jawaban nomor 4. <br> Tampilkan nilai dari "luas" <br> Tampilkan nilai dari "keliling" <br>`;
+
+      //pemisan
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `<br> ============================== <br>`;
+
+      let phi = 3.14;
+      let r = 10;
+      let luas;
+      let keliling;
+
+      luas = phi * r * r;
+      keliling = phi * r * 2;
+
+      console.log(luas);
+      console.log(keliling);
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `Phi: ${phi} <br> r: ${r} <br> Luas: ${luas} <br> Keliling: ${keliling}`;
+    </script>
+  </body>
+</html>

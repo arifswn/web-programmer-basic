@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar For</title>
+  </head>
+  <body>
+    <h1>Belajar For</h1>
+
+    <div id="for"></div>
+    <div id="while"></div>
+    <div id="do-while"></div>
+    <script>
+      // looping for
+      for (let i = 1; i <= 10; i++) {
+        console.log(i);
+        document.getElementById(
+          "for"
+        ).innerHTML += `Ini menggunakan var: ${i}, Saya tidak akan terlambat lagi <br>`;
+      }
+
+      //   pemisah
+      document.getElementById("for").innerHTML += `<br>==================== <br>`;
+      // looping while
+      let y = 1;
+      while (y <= 10) {
+        console.log(y);
+        document.getElementById(
+          "while"
+        ).innerHTML += `Ini menggunakan while: ${y}, Saya tidak akan terlambat lagi <br>`;
+        y++;
+      }
+
+      //   pemisah
+      document.getElementById("while").innerHTML += `<br>==================== <br>`;
+
+      // looping do while
+      let z = 1;
+      do {
+        console.log(z);
+        document.getElementById(
+          "do-while"
+        ).innerHTML += `Ini menggunakan do while: ${z}, Saya tidak akan terlambat lagi <br>`;
+        z++;
+      } while (z <= 10);
+    </script>
+  </body>
+</html>

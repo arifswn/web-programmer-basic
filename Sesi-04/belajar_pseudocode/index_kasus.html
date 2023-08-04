@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studi Kasus</title>
+  </head>
+  <body>
+    <h1>Studi Kasus</h1>
+    <p>
+      Buatlah pseudocode yang menggunakan looping dan conditional sekaligus,
+      berangkat dari kasus berikut: <br />
+      Seorang anak SD sedang belajar angka genap dan ganjil. <br />
+      Dia ditugaskan oleh ibu guru untuk menghitung angka dari 1 sampai 10
+      dengan menyebut angka tersebut dan untuk setiap angka ganjil. <br />
+      Menyebut "ODD!" dan sebaliknya jika genap, ia harus menyebut "EVEN!".
+    </p>
+
+    <div id="studi-kasus"></div>
+
+    <script>
+      // looping for
+      for (var i = 1; i <= 10; i++) {
+        if (i % 2 == 0) {
+          console.log("EVEN!");
+          document.getElementById("studi-kasus").innerHTML +=
+            "Angka " + i + " adalah GENAP dan " + "EVEN!" + "<br/>";
+        } else {
+          console.log("ODD!");
+          document.getElementById("studi-kasus").innerHTML +=
+            "Angka " + i + " adalah GANJIL dan " + "ODD!" + "<br/>";
+        }
+      }
+    </script>
+  </body>
+</html>

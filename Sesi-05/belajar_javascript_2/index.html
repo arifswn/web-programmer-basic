@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript menggunakan Variabel</title>
+
+    <!-- di styling css -->
+  </head>
+  <body>
+    <h1>Penggunaan variabel di js</h1>
+
+    <div id="nama">Workshop 4 days</div>
+    <div id="lokasi"></div>
+
+    <!-- call external js -->
+    <!-- <script src="script.js"></script> -->
+
+    <!-- internal js -->
+    <script>
+      // set variabel / deklarasi variabel
+      // boleh menggunakan titik koma atau tidak
+      // tapi konsisten, jika di awal menggunakan titik koma,
+      // maka di akhir juga harus menggunakan titik koma
+      var nama = "Workshop 4 days menggunakan variabel";
+      var lokasi = "Online";
+
+      // output variabel ke html
+        document.getElementById("nama").innerHTML = nama;
+      // output tanpa variabel
+        document.getElementById("nama").innerHTML = "Workshop 4 days tanpa variabel";
+        document.getElementById("lokasi").innerHTML = lokasi;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Function</title>
+  </head>
+  <body>
+    <h1>Belajar Function</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+      //variabel global
+      var nama = "Arif Setiawan";
+
+      //memanggil function
+      //contoh 1
+      function tampilkan_nama() {
+        document.getElementById(
+          "hasil"
+        ).innerHTML += `Nama saya adalah ${nama} <br>`;
+      }
+      tampilkan_nama();
+
+      //contoh 2
+      function tampilkan_nama2(nama) {
+        document.getElementById(
+          "hasil"
+        ).innerHTML += `Nama saya adalah ${nama} <br>`;
+      }
+      tampilkan_nama2("Arif Setiawan");
+
+      //contoh 3
+      function tampilkan_nama3(nama) {
+        return `Nama saya adalah ${nama} <br>`;
+      }
+      document.getElementById("hasil").innerHTML +=
+        tampilkan_nama3("Arif Setiawan");
+    </script>
+  </body>
+</html>

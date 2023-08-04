@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript tipe data</title>
+  </head>
+  <body>
+    <h1>Tipe data number di javascript</h1>
+
+    <p>Data number</p>
+    <div id="hasil_number"></div>
+    <br />
+
+    <p>Data String</p>
+    <div id="hasil_string"></div>
+    <br />
+
+    <p>Data Array</p>
+    <div id="hasil_array"></div>
+    <br />
+
+    <p>Data Objek</p>
+    <div id="hasil_objek"></div>
+
+    <script>
+      // tipe data number
+      // deklarasi variabel tanpa assign value/nilai
+      var angka;
+      // output nya tidak akan muncul
+      // tetapi tidak akan error
+      // hanya muncul undefined dikarenakan tidak ada nilai
+      console.log(angka);
+
+      // deklarasi variabel dan assign value/nilai
+      angka = 10;
+      // jika sudah di deklarasi, sudah ada tipe datanya
+      // tipe datanya number
+      console.log(angka);
+
+      // change value // reassign value
+      angka = 90;
+      console.log(angka);
+      console.log(angka);
+      console.log(angka);
+      angka -= 10;
+      console.log(angka);
+
+      // output to html
+      document.getElementById("hasil_number").innerHTML = angka;
+
+      // ============================ //
+      // string
+      var kalimat = "Belajar JS di workshop Hacktiv8";
+      document.getElementById("hasil_string").innerHTML = kalimat;
+
+      // array
+      // tipe data array jika kita set nilai/value string maka tipe data
+      // yang berada di dalam array/selanjutnya juga akan menjadi string
+
+      // array string
+      // indexing array dimulai dari 0
+      // contoh loket 1 sampai dan 10
+      // loket 1 = 0
+      // loket 2 = 1
+      // dst
+      // loket 10 = 9
+      var transportasi = ["mobil", "motor", "pesawat", "kapal"];
+      document.getElementById("hasil_array").innerHTML = transportasi[3];
+
+      // objek
+      // pemanggilan data di objek/value menggunakan titik
+      // contoh: manusia.nama atau manusia.asal
+      // menggunakan key
+      var manusia = {
+        nama: "Budi",
+        asal: "Jakarta",
+        usia: 20,
+      };
+      document.getElementById("hasil_objek").innerHTML =
+        "Nama saya " +
+        manusia.nama +
+        " usia saya " +
+        manusia.usia +
+        " tahun asal saya dari " +
+        manusia.asal;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variabel</title>
+</head>
+<body>
+    <h1>Belajar Variabel</h1>
+    <p>
+        Variabel adalah sebuah tempat untuk menyimpan nilai. <br>
+        Variabel dapat diisi dengan berbagai macam tipe data. <br>
+        Macam macam tipe data:
+        <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Array</li>
+            <li>Object</li>
+            <li>Null</li>
+            <li>Undefined</li>
+        </ul>
+    </p>
+
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+
+    <script>
+        // macam macam penggunan variabel var, let, const
+        // var untuk variabel yang nilainya dapat diubah
+        // let untuk variabel yang nilainya dapat diubah
+        // perbedaan let dan var adalah let hanya dapat diakses di dalam scope nya saja
+        // var dapat diakses di luar scope nya
+        // contoh kasus let dan var
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        // }
+        // perhatikan bahwa variabel i hanya dapat diakses di dalam scope for
+        // console.log(i); // akan menghasilkan error
+        // for (var i = 0; i < 10; i++) {
+        //     console.log(i);
+        // }
+        // perhatikan bahwa variabel i dapat diakses di luar scope for
+        // console.log(i); // akan menghasilkan 10
+
+        // show case
+        //jika menggunakan var
+        for (var i = 0; i < 10; i++) {
+            console.log(`Ini menggunakan var: ${i}`);
+        }
+        console.log(i); // akan menghasilkan 10
+
+        //jika menggunakan let
+        for (let y = 0; y < 10; y++) {
+            console.log(`Ini menggunakan let: ${y}`);
+        }
+        console.log(y); // akan menghasilkan error
+        // kenapa menggunakan let? karena let lebih aman digunakan
+        // kenapa lebih aman? karena let hanya dapat diakses di dalam scope nya saja
+        // untuk penggunakan let baiknya digunakan di dalam function, contoh:
+        function test() {
+            for (let y = 0; y < 10; y++) {
+                console.log(`Ini menggunakan let: ${y}`);
+            }
+            console.log(y); // akan menghasilkan error
+        }
+        test();
+
+        // const untuk variabel yang nilainya tidak dapat diubah
+        var nama ="Workshop Hacktiv8 8 Days";
+        var lokasi = "Jakarta";
+
+
+        document.getElementById("nama").innerHTML = `Kegiatan: ${nama}`;
+        document.getElementById("lokasi").innerHTML = `Lokasi: ${lokasi}`;
+    </script>
+
+</body>
+</html>

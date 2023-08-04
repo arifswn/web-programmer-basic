@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Function</title>
+  </head>
+  <body>
+    <h1>Membuat function di Javascript</h1>
+
+    <div id="hasil"></div>
+    <div id="pembelajaran"></div>
+
+    <script>
+      // jika menggunakan parameter
+      function tampilkan_nama(params) {
+        return "Nama saya adalah " + params;
+      }
+
+      // jika tidak menggunakan parameter
+      function tampilkan_nama() {
+        return "Nama saya adalah Arif";
+      }
+
+      function pembelajaran() {
+        return "<br>Hacktiv8 front end web development";
+      }
+
+      document.getElementById("hasil").innerHTML =
+        tampilkan_nama("Arif Setiawan");
+
+      document.getElementById("pembelajaran").innerHTML =
+        tampilkan_nama() + pembelajaran();
+
+      // output menggunakan console
+      console.log(tampilkan_nama("Arif Setiawan"));
+      console.log(tampilkan_nama() + pembelajaran());
+    </script>
+  </body>
+</html>

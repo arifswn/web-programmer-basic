@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Pseudocode</title>
+  </head>
+  <body>
+    <h1>Belajar Pseudocode</h1>
+    <!-- 
+        Rumus  luas persegi, yaitu width dikalikan height.
+        Simpan "width" dengan nilai berapapun
+        Simpan "height" dengan nilai berapapun
+        Simpan "area" tanpa diberikan nilai. Ini akan kita isi nanti.
+        Hitung hasil perkalian "width" dengan "height"
+        Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "area"
+        Tampilkan nilai dari "area"
+     -->
+
+    <h2>Luas Persegi</h2>
+    <p>
+      Rumus luas persegi, yaitu width dikalikan height. Simpan "width" dengan
+      nilai berapapun Simpan "height" dengan nilai berapapun Simpan "area" tanpa
+      diberikan nilai. Ini akan kita isi nanti. Hitung hasil perkalian "width"
+      dengan "height" Setelah mendapatkan hasil perhitungan, isikan hasilnya ke
+      dalam "area" Tampilkan nilai dari "area"
+    </p>
+    <div id="luas-persegi"></div>
+    <script>
+      // Rumus luas persegi, yaitu width dikalikan height.
+      // Simpan "width" dengan nilai berapapun
+      // Simpan "height" dengan nilai berapapun
+      // Simpan "area" tanpa diberikan nilai. Ini akan kita isi nanti.
+      // Hitung hasil perkalian "width" dengan "height"
+      // Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "area"
+      // Tampilkan nilai dari "area"
+
+      let width = 10;
+      let height = 5;
+      let area;
+
+      area = width * height;
+
+      console.log(area);
+      document.getElementById(
+        "luas-persegi"
+      ).innerHTML = `Width: ${width} <br> Height: ${height} <br> Area: ${area}`;
+    </script>
+  </body>
+</html>

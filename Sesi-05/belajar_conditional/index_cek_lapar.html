@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Lapar</title>
+  </head>
+  <body>
+    <h1>Cek Lapar</h1>
+    <p>
+      Cek lapar adalah sebuah kondisi yang akan menampilkan pesan jika kamu
+      lapar.
+    </p>
+
+    <select id="pilihan" required>
+      <option value="">Pilih</option>
+      <option value="true">Lapar</option>
+      <option value="false">Tidak Lapar</option>
+    </select>
+    <br />
+    <button onclick="cekLapar()">Cek Lapar</button>
+    <p id="hasil"></p>
+
+    <script>
+      // deklarasi variabel
+      var pilihan = document.getElementById("pilihan");
+      var hasil = document.getElementById("hasil");
+
+      // function cekLapar
+      function cekLapar() {
+        if (pilihan.value == "") {
+          // jika pilihan tidak dipilih maka tampilkan pesan
+          hasil.innerHTML = "Pilih dulu";
+        } else {
+          // jika pilihan dipilih maka jalankan function cekLapar2
+          cekLapar2();
+        }
+      }
+      function cekLapar2() {
+        // cek apakah pilihan bernilai true atau false
+        if (pilihan.value == "true") {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Kamu lapar, silahkan makan (waktu makan)";
+        } else {
+          // jika false maka tampilkan pesan
+          hasil.innerHTML =
+            "Kamu tidak lapar, silahkan tidur (bukan waktu makan)";
+        }
+      }
+    </script>
+  </body>
+</html>

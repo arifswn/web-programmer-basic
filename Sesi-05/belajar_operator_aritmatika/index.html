@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Aritmatika</title>
+</head>
+<body>
+    <h1>Penggunaan operator Aritmatika di Javascript</h1>
+
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="perkalian"></div>
+    <div id="pembagian"></div>
+    <div id="modulus"></div>
+
+    <script>
+        //dekalarasi variabel dan assign value
+        var bilangan1 = 6;
+        var bilangan2 = 2;
+
+        // assign output to html
+        var penjumlahan = bilangan1 + bilangan2;
+        var pengurangan = bilangan1 - bilangan2;
+        var perkalian = bilangan1 * bilangan2;
+        var pembagian = bilangan1 / bilangan2;
+        var modulus = bilangan1 % bilangan2;
+
+        // call output
+        document.getElementById("penjumlahan").innerHTML = "Hasil penjumlahan dari " + bilangan1 + " + " + bilangan2 + " = " + penjumlahan;
+        document.getElementById("pengurangan").innerHTML = "Hasil pengurangan dari " + bilangan1 + " - " + bilangan2 + " = " + pengurangan;
+        document.getElementById("perkalian").innerHTML = "Hasil perkalian dari " + bilangan1 + " * " + bilangan2 + " = " + perkalian;
+        document.getElementById("pembagian").innerHTML = "Hasil pembagian dari " + bilangan1 + " / " + bilangan2 + " = " + pembagian;
+        document.getElementById("modulus").innerHTML = "Hasil modulus dari " + bilangan1 + " % " + bilangan2 + " = " + modulus;
+
+        //change output menggunakan function
+        // document.getElementById("penjumlahan").innerHTML = output(bilangan1, bilangan2, penjumlahan);
+        // document.getElementById("pengurangan").innerHTML = output(bilangan1, bilangan2, pengurangan);
+        // document.getElementById("perkalian").innerHTML = output(bilangan1, bilangan2, perkalian);
+        // document.getElementById("pembagian").innerHTML = output(bilangan1, bilangan2, pembagian);
+        // document.getElementById("modulus").innerHTML = output(bilangan1, bilangan2, modulus);
+
+
+        function output(bilangan1, bilangan2, params) {
+            return "Hasil dari " + bilangan1 + " + " + bilangan2 + " = " + params;
+        }
+
+    </script>
+</body>
+</html>

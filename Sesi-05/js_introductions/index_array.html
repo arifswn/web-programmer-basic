@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Array</title>
+</head>
+<body>
+    <h1>Belajar Array</h1>
+    <p>
+        Array adalah sebuah variabel yang dapat menyimpan lebih dari 1 nilai. <br>
+        Array dapat diisi dengan berbagai macam tipe data. <br>
+        Macam macam tipe data:
+        <ul>
+            <li>String</li>
+            <li>Number</li>
+            <li>Boolean</li>
+            <li>Array</li>
+            <li>Object</li>
+            <li>Null</li>
+            <li>Undefined</li>
+        </ul>
+    </p>
+
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+
+    <script>
+        // array
+        // cara membuat array
+        // cara 1
+        var nama = ["Rizky", "Khairul", "Fahmi"];
+        console.log(nama);
+        document.getElementById("nama").innerHTML = `Nama: ${nama}`;
+
+        // cara 2
+        var lokasi = new Array("Jakarta", "Bandung", "Surabaya");
+        console.log(lokasi);
+        document.getElementById("lokasi").innerHTML = `Lokasi: ${lokasi}`;
+        //penjelasan kenapa new Array? karena new Array adalah sebuah function yang dapat membuat array baru
+
+        // cara mengakses array
+        // array selalu dimulai dari index 0
+        // contoh: nama[0] akan menghasilkan "Rizky"
+        // contoh: nama[1] akan menghasilkan "Khairul"
+        // contoh: nama[2] akan menghasilkan "Fahmi"
+
+        // cara mengubah nilai array
+        nama[0] = "Rizky Khairul Fahmi";
+        console.log(nama);
+        document.getElementById("nama").innerHTML = `Nama: ${nama}`;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Grade Dengan Input</title>
+  </head>
+  <body>
+    <h1>Cek Grade Dengan Input</h1>
+
+    <p>
+      input dengan type number event onclick di button Cek Grade function yang
+      jalan ketika button Cek Grade di klik mempunyai: bisa mengambil nilai dari
+      input ada kondisional yang mengecek nilai menentukan grade dari nilai
+      dengan kondisional mengubah innerText atau innerHTML untuk menampilkan
+      grade
+    </p>
+
+    <input type="number" id="nilai" />
+    <button onclick="cekGrade()">Cek Grade</button>
+    <p id="hasil"></p>
+
+    <script>
+      // deklarasi variabel
+      var nilai = document.getElementById("nilai");
+      var hasil = document.getElementById("hasil");
+
+      // function cekGrade
+      function cekGrade() {
+        // cek apakah nilai lebih besar atau sama dengan 90
+        if (nilai.value >= 90 && nilai.value <= 100) {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Grade A";
+        } else if (nilai.value >= 80 && nilai.value <= 89) {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Grade B";
+        } else if (nilai.value >= 70 && nilai.value <= 79) {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Grade C";
+        } else if (nilai.value >= 60 && nilai.value <= 69) {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Grade D";
+        } else if (nilai.value >= 0 && nilai.value <= 59) {
+          // jika true maka tampilkan pesan
+          hasil.innerHTML = "Grade E";
+        } else {
+          // jika false maka tampilkan pesan
+          hasil.innerHTML = "Nilai tidak valid";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Looping</title>
+  </head>
+  <body>
+    <h1>Belajar Looping</h1>
+    <p>
+      Looping adalah sebuah perulangan yang akan dijalankan berulang-ulang
+      sampai kondisi yang ditentukan terpenuhi. <br />
+      Macam macam looping:
+    </p>
+    <ul>
+      <li>
+        For digunakan untuk melakukan perulangan dengan jumlah perulangan yang
+        sudah diketahui. <br /><br />
+        Kenapa menggunakan for? karena for lebih cepat dibandingkan while dan do
+        while. <br />
+        Kenapa lebih cepat? karena for hanya melakukan pengecekan kondisi di
+        awal dan di akhir saja. <br /><br />
+        Berbeda dengan while dan do while yang melakukan pengecekan kondisi di
+        awal, di akhir, dan di tengah. <br />
+        Alasan lainnya adalah for lebih mudah dibaca dan lebih singkat.
+      </li>
+      <li>
+        While digunakan untuk melakukan perulangan dengan jumlah perulangan yang
+        belum diketahui. <br /><br />
+        Kenapa menggunakan while? karena while lebih fleksibel dibandingkan for.
+        <br />
+        Kenapa lebih fleksibel? karena while dapat melakukan pengecekan kondisi
+        di awal, di akhir, dan di tengah. <br /><br />
+        Berbeda dengan for yang hanya melakukan pengecekan kondisi di awal dan
+        di akhir saja. <br />
+        Alasan lainnya adalah while lebih mudah dibaca dan lebih singkat.
+      </li>
+
+      <li>
+        Do While digunakan untuk melakukan perulangan dengan jumlah perulangan
+        yang belum diketahui. <br /><br />
+        Kenapa menggunakan do while? karena do while lebih fleksibel
+        dibandingkan for. <br />
+        Kenapa lebih fleksibel? karena do while dapat melakukan pengecekan
+        kondisi di awal, di akhir, dan di tengah. <br /><br />
+        Berbeda dengan for yang hanya melakukan pengecekan kondisi di awal dan
+        di akhir saja. <br />
+        Alasan lainnya adalah do while lebih mudah dibaca dan lebih singkat.
+        <br /><br />
+        Perbedaan While dan Do While adalah do while akan melakukan perulangan
+        minimal 1 kali walaupun kondisi tidak terpenuhi. <br />
+        Sedangkan While tidak akan melakukan perulangan jika kondisi tidak
+        terpenuhi.
+      </li>
+    </ul>
+    <hr />
+    <div id="for"></div>
+
+    <script>
+      //looping for
+      document.getElementById("for").innerHTML += "Menggunakan For" + "<br/>";
+      for (var i = 1; i <= 10; i++) {
+        console.log("Hello : " + i);
+        document.getElementById("for").innerHTML += "Hello " + i + "<br/>";
+      }
+
+      //looping while
+      var i = 1;
+      let text = "";
+      while (i <= 10) {
+        text += "The number is " + i + "<br/>";
+        i++;
+      }
+      console.log(text);
+      //pemisah
+      document.getElementById("for").innerHTML +=
+        "========================" + "<br/>";
+      document.getElementById("for").innerHTML += "Menggunakan While" + "<br/>";
+      document.getElementById("for").innerHTML += text + "<br/>";
+
+      var j = 1;
+      let textDo = "";
+      //looping do while
+      do {
+        textDo += "The number is " + j + "<br/>";
+        j++;
+      } while (j <= 10);
+      console.log(textDo);
+      //pemisah
+      document.getElementById("for").innerHTML +=
+        "========================" + "<br/>";
+      document.getElementById("for").innerHTML +=
+        "Menggunakan Do While" + "<br/>";
+      document.getElementById("for").innerHTML += textDo + "<br/>";
+    </script>
+  </body>
+</html>

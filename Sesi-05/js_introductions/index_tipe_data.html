@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tipe Data</title>
+  </head>
+  <body>
+    <h1>Belajar Tipe Data</h1>
+    <div id="hasil"></div>
+    <!-- in variabel -->
+    <div id="variabel"></div>
+
+    <script>
+      var angka = 80;
+
+      document.getElementById(
+        "hasil"
+      ).innerHTML = `Angka: ${angka} <br> Tipe Data: ${typeof angka}`;
+
+      //pemisah
+      document.getElementById("variabel").innerHTML +=
+        "<br>=====================<br><br>";
+
+      //contoh vairabel
+      var nama = "Hacktiv8";
+      var lokasi = "Jakarta";
+      var tahun = 2023;
+      var hari_array = [
+        "Senin",
+        "Selasa",
+        "Rabu",
+        "Kamis",
+        "Jumat",
+        "Sabtu",
+        "Minggu",
+      ];
+      var hari_object = {
+        senin: "Senin",
+        selasa: "Selasa",
+        rabu: "Rabu",
+        kamis: "Kamis",
+        jumat: "Jumat",
+        sabtu: "Sabtu",
+        minggu: "Minggu",
+      };
+      var status = true;
+      var kosong = null;
+      var tidak_ada = undefined;
+
+      document.getElementById(
+        "variabel"
+      ).innerHTML += `Nama: ${nama} <br> Lokasi: ${lokasi} <br> Tahun: ${tahun} <br> Hari Array: ${hari_array} <br> Hari Object: ${hari_object} <br> Status: ${status} <br> Kosong: ${kosong} <br> Tidak Ada: ${tidak_ada}`;
+      //pemisah
+      document.getElementById("variabel").innerHTML += "<br><br>";
+      //tipe data
+      document.getElementById(
+        "variabel"
+      ).innerHTML += `Tipe data dari nama adalah ${typeof nama} <br> Tipe data dari lokasi adalah ${typeof lokasi} <br> Tipe data dari tahun adalah ${typeof tahun} <br> Tipe data dari hari_array adalah ${typeof hari_array} <br> Tipe data dari hari_object adalah ${typeof hari_object} <br> Tipe data dari status adalah ${typeof status} <br> Tipe data dari kosong adalah ${typeof kosong} <br> Tipe data dari tidak_ada adalah ${typeof tidak_ada}`;
+    </script>
+  </body>
+</html>

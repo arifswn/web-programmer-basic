@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Perulangan</title>
+  </head>
+  <body>
+    <h1>Belajar Perulangan</h1>
+
+    <button onclick="print()">Print 10x</button>
+    <div id="hasil"></div>
+
+    <script>
+      // deklarasi variabel
+      var hasil = document.getElementById("hasil");
+
+      // function print
+      function print() {
+        // looping for
+        for (var i = 0; i < 10; i++) {
+          // tampilkan hasil looping
+          hasil.innerHTML += `Ini hasil looping ke ${i + 1} <br>`;
+        }
+      }
+    </script>
+  </body>
+</html>

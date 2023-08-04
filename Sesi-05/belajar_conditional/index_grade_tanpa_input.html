@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengenalan Conditional</title>
+  </head>
+  <body>
+    <h1>Pengenalan Conditional</h1>
+
+    <!-- hasil nilai -->
+    <div id="hasil_nilai"></div>
+    <!-- hasil boolean -->
+    <div id="hasil_boolean"></div>
+
+    <!-- external -->
+    <script src="script.js"></script>
+    <!-- internal -->
+    <script>
+      // nama function : hitungGradePembanding(params)
+      // cek nilai
+      var nilai = 0;
+      var grade = hitungGradePembanding(nilai);
+      document.getElementById("hasil_nilai").innerHTML =
+        "Grade dari nilai " + nilai + " adalah " + grade;
+
+      //cek status boolean (true,false)
+      let status = true;
+      var hasil = status ? "Aktif" : "Tidak Aktif"; // row function / ternary operator
+      // kondisional if else
+      if (status == true) {
+        hasil = "Aktif";
+      } else {
+        hasil = "Tidak Aktif";
+      }
+      document.getElementById("hasil_boolean").innerHTML = hasil;
+
+      // menggunakan pembading ===
+      let kondisi = "lapar";
+      if (kondisi === "lapar") console.log("Saya lapar"); // 1 row function
+      if (kondisi === "tidak lapar") console.log("Saya tidak lapar");
+      
+      //   ternary function
+      console.log(kondisi !== "lapar" ? "Saya lapar, menggunakan ternary" : "Saya tidak lapar"); // 1 row function
+
+      if (kondisi === "lapar") console.log("Saya lapar");
+      else console.log("Saya tidak lapar"); // 1 row function
+
+      if (kondisi !== "lapar" || !status) {
+        console.log("nama : Arif");
+        console.log("Saya lapar");
+      } else {
+        console.log("nama : Arif\nSaya tidak lapar");
+      }
+    </script>
+  </body>
+</html>

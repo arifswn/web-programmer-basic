@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Perulangan Array</title>
+  </head>
+  <body>
+    <h1>Belajar Perulangan Array</h1>
+
+    <button onclick="print()">Print Array</button>
+    <div id="hasil"></div>
+
+    <script>
+      // deklarasi variabel
+      var hasil = document.getElementById("hasil");
+
+      // deklarasi array
+      var listMakanan = [
+        "Nasi Goreng",
+        "Mie Goreng",
+        "Nasi Uduk",
+        "Nasi Kuning",
+        "Nasi Kebuli",
+        "Nasi Kucing",
+        "Nasi Pecel",
+        "Nasi Rames",
+        "Nasi Padang",
+        "Nasi Kebuli",
+      ];
+
+      // function print
+      function print() {
+        // looping array
+        for (var i = 0; i < listMakanan.length; i++) {
+          // tampilkan hasil looping
+          hasil.innerHTML += `${i + 1}. ${listMakanan[i]} <br>`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Event</title>
+  </head>
+  <body>
+    <h1>Memahami Event</h1>
+
+    <button onclick="tamilkan_nama()">Tampilkan Nama</button>
+
+    <div id="hasil"></div>
+
+    <script>
+      // deklarasi variabel
+      var nama = "Arif Setiawan";
+
+      // membuat function
+      function tamilkan_nama() {
+        // tampilkan nama
+        document.getElementById("hasil").innerHTML = nama;
+      }
+
+      // memanggil function Setelah halaman selesai di load
+      // tamilkan_nama();
+    </script>
+  </body>
+</html>

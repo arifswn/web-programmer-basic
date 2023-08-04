@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar event pada javascript</title>
+
+    <!-- call external css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mengenal event pada Javascript</h1>
+
+    <!-- event onclick di button -->
+    <button onclick="tampilkan_nama()">Klik Saya</button>
+
+    <!-- hasil -->
+    <div id="hasil"></div>
+    <script>
+      // deklarasi variabel dan assign value
+      var nama = "Arif Setiawan";
+
+      // function
+      function tampilkan_nama() {
+        // output
+        document.getElementById("hasil").innerHTML = "Nama saya adalah " + nama;
+        // menggunakan document.write ngeganti semua html
+        document.write("Nama saya adalah " + nama);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami Object</title>
+</head>
+<body>
+    <h1>Memahami Object</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+        var siswa = {
+            nama: "Arif",
+            umur: 17,
+            alamat: "Jl. Ir. H. Juanda",
+            hobi: ["Membaca", "Menulis", "Menggambar"],
+            orangTua: {
+                ayah: "Budi",
+                ibu: "Susi"
+            }
+        };
+
+        document.getElementById("hasil").innerHTML = `Nama: ${siswa.nama} <br> Umur: ${siswa.umur} <br> Alamat: ${siswa.alamat} <br> Hobi: ${siswa.hobi} <br> Ayah: ${siswa.orangTua.ayah} <br> Ibu: ${siswa.orangTua.ibu}`;
+        //penjelasan
+        // object adalah sebuah variabel yang dapat menyimpan banyak nilai
+        // object dapat menyimpan banyak nilai dengan cara menyimpannya dalam bentuk key dan value
+        // perbedaan array dan object adalah array menyimpan banyak nilai dengan cara menyimpannya dalam bentuk index dan value
+
+        // contoh array
+        var namaSiswa = ["Arif", "Budi", "Caca"];
+
+        // contoh object
+        var siswa = {
+            nama: "Arif",
+            umur: 17,
+            alamat: "Jl. Ir. H. Juanda",
+            hobi: ["Membaca", "Menulis", "Menggambar"],
+            orangTua: {
+                ayah: "Budi",
+                ibu: "Susi"
+            }
+        };
+
+        // cara mengakses nilai array
+        console.log(namaSiswa[0]); // akan menghasilkan "Arif"
+
+        // cara mengakses nilai object
+        console.log(siswa.nama); // akan menghasilkan "Arif"
+        // kenapa menggunakan titik? karena titik digunakan untuk mengakses nilai dari object
+        // kenapa menggunakan kurung siku? karena kurung siku digunakan untuk mengakses nilai dari array
+
+        // cara mengakses nilai object yang memiliki nilai array
+        console.log(siswa.hobi[0]); // akan menghasilkan "Membaca"
+
+        // cara mengakses nilai object yang memiliki nilai object
+        console.log(siswa.orangTua.ayah); // akan menghasilkan "Budi"
+
+        // cara mengubah nilai object
+        siswa.nama = "Budi";
+        console.log(siswa.nama); // akan menghasilkan "Budi"
+
+        // cara menambahkan nilai object
+        siswa.kelas = "XII RPL 1";
+        console.log(siswa.kelas); // akan menghasilkan "XII RPL 1"
+
+        // cara menghapus nilai object
+        delete siswa.kelas;
+        console.log(siswa.kelas); // akan menghasilkan "undefined"
+
+        // cara menghapus object
+        delete siswa;
+        console.log(siswa); // akan menghasilkan "undefined"
+
+        // cara menghapus object
+        siswa = null;
+        console.log(siswa); // akan menghasilkan "null"
+
+        // cara menghapus object
+        siswa = undefined;
+        console.log(siswa); // akan menghasilkan "undefined"
+    </script>
+</body>
+</html>
