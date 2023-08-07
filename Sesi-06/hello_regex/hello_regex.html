@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sample -->
+    <label for="nomor_telp">Masukkan Nomor Telp</label>
+    <br />
+    <!-- only number input -->
+    <input type="number" name="" id="" placeholder="Masukan nomor telp anda" />
+
+    <!-- terapkan regex -->
+    <script>
+      // load regex 1
+      var foo = /ab+c/;
+
+      console.log(foo); //udh jadi bagian dalam unit testing
+      console.log(typeof foo);
+
+      // load regex 2
+      var bar = new RegExp("ab+c");
+      console.log(foo);
+      console.log(typeof foo);
+
+      // regex belajar
+      var foo = "Belajar JavaScript";
+      var pola = /JavaScript/;
+
+      console.log(pola.test(foo));
+      console.log(/Belajar/.test(foo));
+      console.log(/belajar/.test(foo));
+
+      //regex angka
+      var foo = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+      var pola = /\d+/g;
+
+      //   console.log(pola.test(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo)); // tidak ada
+
+      //regex belajar 2
+      var foo = "Belajar JavaScript";
+      console.log(/JavaScript/.test(foo));
+      console.log(/javaScript/.test(foo));
+      console.log(/Belajar/.test(foo));
+      console.log(/belajar/.test(foo));
+      console.log(/Java/.test(foo));
+      console.log(/ajar/.test(foo));
+
+      //batas
+      console.log("====================================");
+      //regex pola
+      var pola = /[a-e]../;
+      console.log(pola.test("ax"));
+      console.log(pola.test("afba"));
+      console.log(pola.test("1dd"));
+      console.log(pola.test("add"));
+      console.log(pola.test(" dd"));
+      console.log(pola.test("belajar"));
+      console.log("====================================");
+    </script>
+  </body>
+</html>

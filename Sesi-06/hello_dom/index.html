@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar DOM</title>
+  </head>
+  <body>
+    <h1>Belajar DOM</h1>
+
+    <p id="cek" class="cek">Cek Element</p>
+
+    <p id="judul">Cek Judul</p>
+
+    <script>
+      //akses objek head
+      document.head;
+      console.log(document.head);
+
+      //akses objek body
+      document.body;
+      console.log(document.body);
+
+      //lihat jumlah huruf, dijudul pada objek title
+      document.title.length;
+      console.log(document.title.length);
+
+      // akses get element
+      var cek = document.getElementById("cek");
+      console.log(cek);
+
+      // akses get element by tag name
+      var p = document.getElementsByTagName("p");
+      console.log(p);
+
+      // akses get element by class name
+      var cek = document.getElementsByClassName("cek");
+      console.log(cek);
+
+      // akses get element by query selector
+      var cek = document.querySelector(".cek");
+      console.log(cek);
+
+      // akses get element by query selector all
+      var cek = document.querySelectorAll(".cek");
+      console.log(cek);
+
+      // batas
+      console.log("====================================");
+
+      //element
+      var judul = document.getElementById("judul");
+
+      // mengubah isi text
+      judul.textContent = "Belajar DOM";
+
+      // mengubah isi html
+      judul.innerHTML = "<em>Belajar DOM</em>";
+
+      // mengubah isi style
+      judul.style.backgroundColor = "lightblue";
+
+      // mengubah isi attribute
+      judul.setAttribute("name", "judul");
+
+      //menambah element
+      var pBaru = document.createElement("p");
+      //mengisi pBaru dengan teksPBaru
+      pBaru.textContent = "Paragraf Baru";
+      //menambah
+      document.body.append(pBaru);
+    </script>
+  </body>
+</html>

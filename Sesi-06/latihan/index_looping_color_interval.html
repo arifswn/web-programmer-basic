@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Java Script</title>
+  </head>
+  <body>
+    <h3>Belajar Interval &nbsp; Timeout</h3>
+    <p
+      class="paragraf"
+      style="color: white; background-color: blueviolet; padding: 10px"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, eos rem!
+      Ipsam nulla doloribus deserunt minus blanditiis. Facilis laudantium,
+      placeat mollitia temporibus eveniet accusantium, expedita nam sint
+      voluptates consectetur provident.
+    </p>
+
+    <script>
+      var interval, timeout;
+      var x = document.getElementsByTagName("p")[0];
+
+      changeColor();
+
+      function changeColor() {
+        clear(); //clear
+        interval = setInterval(myFunction, 500);
+        timeout = setTimeout(clear, 5000); //4x500 + 4 times run
+      }
+
+      function clear() {
+        if (interval) {
+          clearInterval(interval);
+          console.log("clear interval");
+        }
+        if (timeout) {
+          clearInterval(timeout);
+          console.log("clear timeout");
+          x.style.color = "black"; //end color
+          x.style.backgroundColor = "white"; //end background
+        }
+      }
+
+      function myFunction() {
+        x.style.color = x.style.color == "white" ? "yellow" : "white";
+
+        //menggunakan if
+        if (x.style.color == "white") {
+          x.style.backgroundColor = "blueviolet";
+        } else {
+          x.style.backgroundColor = "red";
+        }
+
+        //menggunakan switch
+        switch (x.style.color) {
+          case "white":
+            x.style.backgroundColor = "blueviolet";
+            break;
+          case "yellow":
+            x.style.backgroundColor = "red";
+            break;
+          default:
+            x.style.backgroundColor = "blue";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

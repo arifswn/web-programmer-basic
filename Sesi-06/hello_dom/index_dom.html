@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek DOM</title>
+  </head>
+  <body>
+    <h2 id="judul">Delete Saya!</h2>
+    <script>
+      //memilih element berdasarkan id
+      var h2 = document.getElementById("judul");
+      //menghapus element
+      h2.remove();
+
+      //memilih element berdasarkan class
+      var p = document.getElementsByClassName("paragraf");
+      //menghapus element
+      p[0].remove();
+
+      //memilih element berdasarkan tag
+      var p = document.getElementsByTagName("p");
+      //menghapus element
+      p[0].remove();
+
+      console.log("Element sudah dihapus");
+      console.log(h2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Color</title>
+  </head>
+  <body>
+    <h1>Hello Color</h1>
+    <button onclick="ubahWarna()">Ubah Warna</button>
+    <br />
+
+    <label for="warna_latar">Warna Latar</label>
+    <input type="color" id="warna_latar" />
+    <br />
+
+    <label for="warna_teks">Warna Teks</label>
+    <input type="color" id="warna_teks" />
+
+    <script>
+      // deklarasi variabel
+      var body = document.body;
+      var warnaLatar = document.getElementById("warna_latar");
+      var warnaTeks = document.getElementById("warna_teks");
+
+      //default warna blue
+      body.style.backgroundColor = "blue";
+      body.style.color = "white";
+
+      // function ubahWarna
+      function ubahWarna() {
+        // mengubah warna latar
+
+        body.style.backgroundColor = warnaLatar.value;
+        // mengubah warna teks
+        body.style.color = warnaTeks.value;
+      }
+
+      //change event
+      warnaLatar.addEventListener("change", function () {
+        body.style.backgroundColor = warnaLatar.value;
+      });
+
+      warnaTeks.addEventListener("change", function () {
+        body.style.color = warnaTeks.value;
+      });
+    </script>
+  </body>
+</html>

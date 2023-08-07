@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HELLO LATIHAN LOOPING</title>
+  </head>
+  <body>
+    <h1 style="color: darkblue; background-color: aqua; padding: 15px;">Latihan Looping</h1>
+    <p id="lorem"></p>
+    <script>
+      //looping lorem
+      var lorem = document.getElementById("lorem");
+      var textLorem = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolores sequi molestiae est necessitatibus excepturi laboriosam recusandae
+      voluptatem sapiente, nihil culpa praesentium minus amet laborum voluptas
+      aliquam. Obcaecati, accusamus laborum.`;
+      for (let i = 0; i < 3; i++) {
+        document.getElementById("lorem").innerHTML += `<p>${textLorem}</p>`;
+      }
+
+      setInterval(() => {
+        setTimeout(() => {
+          //change background color
+          document.body.style.backgroundColor = "red";
+          lorem.style.color = "yellow";
+        }, 500);
+        document.body.style.backgroundColor = "blue";
+        lorem.style.color = "orange";
+      }, 1000);
+    </script>
+  </body>
+</html>
